@@ -1,0 +1,24 @@
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+        <div style="width: 50%; margin: 25px auto;">
+            <h1 class="text-center">Register</h1>
+            <form action="/register" method="post">
+                <div class="form-group">
+                  <label for="username">Create Username</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Create Username">
+                  <small id="usernameHelp" class="form-text text-muted">Create a username that you will remember</small>
+                </div>
+                <div class="form-group">
+                  <label for="password">Create Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Create Password">
+                  <small id="passwordHelp" class="form-text text-muted">Create a password that you will remember</small>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<% include partials/footer %>
